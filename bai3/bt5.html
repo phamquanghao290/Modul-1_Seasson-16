@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function doiChoHaiSoNguyen(a, b) {
+                var temp = a;
+                a = b;
+                b = temp;
+                return [a, b];
+            }
+            var so1 = parseInt(prompt("Nhập số thứ nhất:"));
+            var so2 = parseInt(prompt("Nhập số thứ hai:"));
+            var ketQua = doiChoHaiSoNguyen(so1, so2);
+            console.log("Sau khi đổi chỗ, số thứ nhất là: " + ketQua[0]);
+            console.log("Sau khi đổi chỗ, số thứ hai là: " + ketQua[1]);
+
+    </script>
+</body>
+</html>

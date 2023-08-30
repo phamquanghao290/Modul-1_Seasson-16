@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function demKyTuTrongMang(arr, kyTu) {
+            let dem = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === kyTu) {
+                    dem++;
+                }
+            }
+            if (dem > 0) {
+                return dem;
+            } else {
+                return -1;
+            }
+        }
+        let mangKyTu = ['a', 'b', 'c', 'd', 'a', 'e', 'f'];
+        let kyTuCanTim = 'a';
+        let ketQua = demKyTuTrongMang(mangKyTu, kyTuCanTim);
+        if (ketQua !== -1) {
+            console.log(`Ký tự '${kyTuCanTim}' xuất hiện ${ketQua} lần trong mảng.`);
+        } else {
+            console.log(`Ký tự '${kyTuCanTim}' không xuất hiện trong mảng.`);
+        }
+
+    </script>
+</body>
+
+</html>

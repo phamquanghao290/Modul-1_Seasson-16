@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemtratansuat(chuoi) {
+            let tansuat = new Map();
+
+            for (let kytu of chuoi) {
+                tansuat.set(kytu, (tansuat.get(kytu) || 0) + 1);
+            }
+
+            for (let [kytu, solanxuathien] of tansuat) {
+                console.log(`Ký tự '${kytu}' xuất hiện ${solanxuathien} lần.`);
+            }
+        }
+        let chuoi = prompt("Nhập vào một chuỗi:");
+        kiemtratansuat(chuoi);  
+    </script>
+</body>
+
+</html>

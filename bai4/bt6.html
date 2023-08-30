@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sapxepchuoiso(chuoi) {
+            let array = chuoi.split(' ').map(Number);
+            let mangdasapxep = array.sort(function (a, b) {
+                return a - b;
+            });
+            let chuoidasapxep = mangdasapxep.join(' ');
+            return chuoidasapxep;
+        }
+        let chuoiso = prompt("Nhập vào một chuỗi số, cách nhau bằng dấu cách:");
+        let chuoidasapxep = sapxepchuoiso(chuoiso);
+        console.log("Chuỗi số sau khi đã sắp xếp: " + chuoidasapxep);
+    </script>
+</body>
+
+</html>

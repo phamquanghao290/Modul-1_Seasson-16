@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function tinhDienTichHinhTron(banKinh) {
+        //     var dienTich = Math.PI * Math.pow(banKinh, 2);
+        //     return dienTich;
+        // }
+        // function tinhChuViHinhTron(banKinh) {
+        //     var chuVi = 2 * Math.PI * banKinh;
+        //     return chuVi;
+        // }
+        // var banKinh = parseFloat(prompt("Nhập bán kính của hình tròn:"));
+        // var dienTich = tinhDienTichHinhTron(banKinh);
+        // var chuVi = tinhChuViHinhTron(banKinh);
+        // console.log("Diện tích của hình tròn có bán kính " + banKinh + " là: " + dienTich);
+        // console.log("Chu vi của hình tròn có bán kính " + banKinh + " là: " + chuVi);
+        // Hàm kiểm tra số hoàn hảo
+
+
+
+
+
+        // function laSoHoanHao(so) {
+        //         if (so <= 0) {
+        //             return false; 
+        //         }
+
+        //         var tongUoc = 0;
+        //         for (var i = 1; i < so; i++) {
+        //             if (so % i === 0) {
+        //                 tongUoc += i;
+        //             }
+        //         }
+        //         return tongUoc === so;
+        //     }
+        //     var soNhap = parseInt(prompt("Nhập một số:"));
+        //     var ketQua = laSoHoanHao(soNhap);
+        //     if (ketQua) {
+        //         console.log(soNhap + " là số hoàn hảo.");
+        //     } else {
+        //         console.log(soNhap + " không phải là số hoàn hảo.");
+        //     }
+
+
+
+
+
+        function timSoBeNhat() {
+            let so1 = prompt("Nhập số thứ nhất:");
+            let so2 = prompt("Nhập số thứ hai:");
+            let so3 = prompt("Nhập số thứ ba:");
+            let soBeNhat = Math.min(so1, so2, so3);
+            return soBeNhat;
+        }
+        let ketQua = timSoBeNhat();
+        console.log("Số bé nhất trong ba số là: " + ketQua);
+    </script>
+</body>
+
+</html>

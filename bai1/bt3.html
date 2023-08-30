@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemTraVaTinhTong(thamSo1, thamSo2) {
+            if (thamSo1 > thamSo2) {
+                alert("Tham số thứ nhất lớn hơn tham số thứ hai");
+            } else {
+                return thamSo1 + thamSo2;
+            }
+        }
+        const so1 = 7;
+        const so2 = 5;
+        const ketQua = kiemTraVaTinhTong(so1, so2);
+        if (typeof ketQua !== 'undefined') {
+            console.log(`Tổng của hai tham số là: ${ketQua}`);
+        }
+    </script>
+</body>
+
+</html>

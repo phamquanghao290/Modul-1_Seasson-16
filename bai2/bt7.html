@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doiCho(a, b) {
+                let temp = a;
+                a = b;
+                b = temp;
+
+                return [a, b];
+            }
+            let [number1, number2] = doiCho(5, 10);
+            console.log(`Sau khi đổi chỗ: số thứ nhất = ${number1}, số thứ hai = ${number2}`);
+    </script>
+</body>
+</html>
